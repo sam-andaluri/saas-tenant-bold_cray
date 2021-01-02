@@ -1,0 +1,9 @@
+namespace: bold_cray
+namePrefix: bold_cray
+commonLabels:
+  app.kubernetes.io/name: frontend
+resources:
+- deployment.yaml
+- service.yaml
+patchesStrategicMerge:
+- free.yaml
